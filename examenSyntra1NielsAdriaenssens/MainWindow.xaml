@@ -1,0 +1,484 @@
+﻿<Window
+    x:Class="examenSyntra1NielsAdriaenssens.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:examenSyntra1NielsAdriaenssens"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="800"
+    mc:Ignorable="d">
+
+    <Grid>
+        <!--  SCROLLBAR  -->
+        <!--<ScrollBar x:Name="ScrollBarVertical" Orientation="Vertical" />-->
+        <!--  GRID DEFFINITIONS  -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="80" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+
+        <!--  TITEL  -->
+        <Label
+            Padding="5"
+            Content="Hoofdstring"
+            FontSize="18"
+            Foreground="red" />
+
+        <!--  TEXTBOX INPUT  -->
+        <TextBox
+            x:Name="txtInput"
+            Grid.Column="1"
+            Margin="5"
+            Padding="4"
+            VerticalAlignment="Center"
+            Text=" visual basic.net is the verry best. " />
+
+        <!--  LABEL UPPERCASE  -->
+        <Label Grid.Row="1" Content="1. Alles in hoofdletters zetten" />
+        <!--  TEXTBOX UPPERCASE  -->
+        <TextBox
+            x:Name="txtUpperCase"
+            Grid.Row="1"
+            Grid.Column="1"
+            Margin="5"
+            Background="Khaki"
+            Cursor="Arrow"
+            IsReadOnly="True" />
+        <!--  BUTTON UPPERCASE  -->
+        <Button
+            x:Name="btnUpperCase"
+            Grid.Row="1"
+            Grid.Column="2"
+            Margin="5,5,40,5"
+            Click="btnUpperCase_Click"
+            Content="..."
+            Cursor="Hand" />
+
+        <!--  LABEL LOWERCASE  -->
+        <Label Grid.Row="2" Content="2. Alles in kleine letters zetten" />
+        <!--  TEXTBOX LOWERCASE  -->
+        <TextBox
+            x:Name="txtLowerCase"
+            Grid.Row="2"
+            Grid.Column="1"
+            Margin="5"
+            Background="Khaki"
+            Cursor="Arrow"
+            IsReadOnly="True" />
+        <!--  BUTTON UPPERCASE  -->
+        <Button
+            x:Name="btnLowerCase"
+            Grid.Row="2"
+            Grid.Column="2"
+            Margin="5,5,40,5"
+            Click="btnLowerCase_Click"
+            Content="..."
+            Cursor="Hand" />
+
+        <!--  LABEL COUNT  -->
+        <Label Grid.Row="3" Content="3. Lengte van de string" />
+        <!--  TEXTBOX COUNT  -->
+        <TextBox
+            x:Name="txtCount"
+            Grid.Row="3"
+            Grid.Column="1"
+            Margin="5"
+            Background="Khaki"
+            Cursor="Arrow"
+            IsReadOnly="True" />
+        <!--  BUTTON COUNT  -->
+        <Button
+            x:Name="btnCount"
+            Grid.Row="3"
+            Grid.Column="2"
+            Margin="5,5,40,5"
+            Click="btnCount_Click"
+            Content="..."
+            Cursor="Hand" />
+
+        <!--  LABEL FIRST LETTER  -->
+        <Label Grid.Row="4" Content="4. Eerste letter van de string" />
+        <!--  TEXTBOX FIRST LETTER  -->
+        <TextBox
+            x:Name="txtFirstLetter"
+            Grid.Row="4"
+            Grid.Column="1"
+            Margin="5"
+            Background="Khaki"
+            Cursor="Arrow"
+            IsReadOnly="True" />
+        <!--  BUTTON FIRSTLETTER  -->
+        <Button
+            x:Name="btnFirstLetter"
+            Grid.Row="4"
+            Grid.Column="2"
+            Margin="5,5,40,5"
+            Click="btnFirstLetter_Click"
+            Content="..."
+            Cursor="Hand" />
+
+        <!--  LABEL FIRST LETTER  -->
+        <Label Grid.Row="5" Content="5. Laatste letter van de string" />
+        <!--  TEXTBOX FIRST LETTER  -->
+        <TextBox
+            x:Name="txtLastLetter"
+            Grid.Row="5"
+            Grid.Column="1"
+            Margin="5"
+            Background="Khaki"
+            Cursor="Arrow"
+            IsReadOnly="True" />
+        <!--  BUTTON LASTLETTER  -->
+        <Button
+            x:Name="btnlastLetter"
+            Grid.Row="5"
+            Grid.Column="2"
+            Margin="5,5,40,5"
+            Click="btnLastLetter_Click"
+            Content="..."
+            Cursor="Hand" />
+
+        <!--  LABEL 3THROUGH7  -->
+        <Label Grid.Row="6" Content="6. De 3de tem de 7de letter" />
+        <!--  TEXTBOX 3THROUGH7  -->
+        <TextBox
+            x:Name="txt3Through7"
+            Grid.Row="6"
+            Grid.Column="1"
+            Margin="5"
+            Background="Khaki"
+            Cursor="Arrow"
+            IsReadOnly="True" />
+        <!--  BUTTON 3THROUGH7  -->
+        <Button
+            x:Name="btn3Through7"
+            Grid.Row="6"
+            Grid.Column="2"
+            Margin="5,5,40,5"
+            Click="btn3Through7_Click"
+            Content="..."
+            Cursor="Hand" />
+
+        <!--  LABEL DELETE FRONT SPACE  -->
+        <Label Grid.Row="7" Content="7. Spaties voor de string weghalen" />
+        <!--  TEXTBOX DELETE FRONT SPACE  -->
+        <TextBox
+            x:Name="txtDeleteFrontSpace"
+            Grid.Row="7"
+            Grid.Column="1"
+            Margin="5"
+            Background="Khaki"
+            Cursor="Arrow"
+            IsReadOnly="True" />
+        <!--  BUTTON DELETE FRONT SPACE  -->
+        <Button
+            x:Name="btnDeleteFrontSpace"
+            Grid.Row="7"
+            Grid.Column="2"
+            Margin="5,5,40,5"
+            Click="btnDeleteFrontSpace_Click"
+            Content="..."
+            Cursor="Hand" />
+
+        <!--  LABEL DELETE END SPACE  -->
+        <Label Grid.Row="8" Content="8. Spaties achter de string weghalen" />
+        <!--  TEXTBOX DELETE END SPACE  -->
+        <TextBox
+            x:Name="txtDeleteEndSpace"
+            Grid.Row="8"
+            Grid.Column="1"
+            Margin="5"
+            Background="Khaki"
+            Cursor="Arrow"
+            IsReadOnly="True" />
+        <!--  BUTTON DELETE END SPACE  -->
+        <Button
+            x:Name="btnDeleteEndSpace"
+            Grid.Row="8"
+            Grid.Column="2"
+            Margin="5,5,40,5"
+            Click="btnDeleteEndSpace_Click"
+            Content="..."
+            Cursor="Hand" />
+
+        <!--  LABEL DELETE SPACES  -->
+        <Label Grid.Row="9" Content="9. Spaties voor en achter de string weghalen" />
+        <!--  TEXTBOX DELETE SPACES  -->
+        <TextBox
+            x:Name="txtDeleteSpaces"
+            Grid.Row="9"
+            Grid.Column="1"
+            Margin="5"
+            Background="Khaki"
+            Cursor="Arrow"
+            IsReadOnly="True" />
+        <!--  BUTTON DELETE SPACES  -->
+        <Button
+            x:Name="btnDeleteSpaces"
+            Grid.Row="9"
+            Grid.Column="2"
+            Margin="5,5,40,5"
+            Click="btnDeleteSpaces_Click"
+            Content="..."
+            Cursor="Hand" />
+
+        <!--  LABEL DELETE .NET  -->
+        <Label Grid.Row="10" Content="10. Verwijder .NET uit de tekst" />
+        <!--  TEXTBOX DELETE .NET  -->
+        <TextBox
+            x:Name="txtDeleteNET"
+            Grid.Row="10"
+            Grid.Column="1"
+            Margin="5"
+            Background="Khaki"
+            Cursor="Arrow"
+            IsReadOnly="True" />
+        <!--  BUTTON DELETE .NET  -->
+        <Button
+            x:Name="btnDeleteNET"
+            Grid.Row="10"
+            Grid.Column="2"
+            Margin="5,5,40,5"
+            Click="btnDeleteNET_Click"
+            Content="..."
+            Cursor="Hand" />
+
+        <!--  LABEL ADD .NET  -->
+        <Label Grid.Row="11" Content="11. Voeg een toe aan de tekst voor .NET" />
+        <!--  TEXTBOX ADD .NET  -->
+        <TextBox
+            x:Name="txtAddNET"
+            Grid.Row="11"
+            Grid.Column="1"
+            Margin="5"
+            Background="Khaki"
+            Cursor="Arrow"
+            IsReadOnly="True" />
+        <!--  BUTTON ADD .NET  -->
+        <Button
+            x:Name="btnADDNET"
+            Grid.Row="11"
+            Grid.Column="2"
+            Margin="5,5,40,5"
+            Click="btnAddNET_Click"
+            Content="..."
+            Cursor="Hand" />
+
+        <!--  LABEL REPLACE WORDS  -->
+        <Label Grid.Row="12" Content="12. Vervang Visual Basic.NET door c#" />
+        <!--  TEXTBOX REPLACE WORDS  -->
+        <TextBox
+            x:Name="txtReplaceWords"
+            Grid.Row="12"
+            Grid.Column="1"
+            Margin="5"
+            Background="Khaki"
+            Cursor="Arrow"
+            IsReadOnly="True" />
+        <!--  BUTTON REPLACE WORDS  -->
+        <Button
+            x:Name="btnReplaceWords"
+            Grid.Row="12"
+            Grid.Column="2"
+            Margin="5,5,40,5"
+            Click="btnReplaceWords_Click"
+            Content="..."
+            Cursor="Hand" />
+
+        <!--  LABEL SELECT SENTENCE  -->
+        <Label Grid.Row="13" Content="13. Selecteer de ganse tekst" />
+        <!--  TEXTBOX SELECT SENTENCE  -->
+        <TextBox
+            x:Name="txtSelectSentence"
+            Grid.Row="13"
+            Grid.Column="1"
+            Margin="5"
+            Background="Khaki"
+            Cursor="Arrow"
+            IsReadOnly="True" />
+        <!--  BUTTON SELECT SENTENCE  -->
+        <Button
+            x:Name="btnSelectSentence"
+            Grid.Row="13"
+            Grid.Column="2"
+            Margin="5,5,40,5"
+            Click="btnSelectSentence_Click"
+            Content="..."
+            Cursor="Hand" />
+
+        <!--  LABEL SELECT LETTERS  -->
+        <Label Grid.Row="14" Content="14. Selecteer de 3de tem de 7de letter" />
+        <!--  TEXTBOX SELECT LETTERS  -->
+        <TextBox
+            x:Name="txtSelectLetters"
+            Grid.Row="14"
+            Grid.Column="1"
+            Margin="5"
+            Background="Khaki"
+            Cursor="Arrow"
+            IsReadOnly="True" />
+        <!--  BUTTON SELECT LETTERS  -->
+        <Button
+            x:Name="btnSelectLetters"
+            Grid.Row="14"
+            Grid.Column="2"
+            Margin="5,5,40,5"
+            Click="btnSelectLetters_Click"
+            Content="..."
+            Cursor="Hand" />
+
+        <!--  LABEL REVERSE STRING  -->
+        <Label Grid.Row="15" Content="15. De  string omdraaien" />
+        <!--  TEXTBOX REVERSE STRING  -->
+        <TextBox
+            x:Name="txtReverseString"
+            Grid.Row="15"
+            Grid.Column="1"
+            Margin="5"
+            Background="Khaki"
+            Cursor="Arrow"
+            IsReadOnly="True" />
+        <!--  BUTTON REVERSE STRING  -->
+        <Button
+            x:Name="btnReverseString"
+            Grid.Row="15"
+            Grid.Column="2"
+            Margin="5,5,40,5"
+            Click="btnReverseString_Click"
+            Content="..."
+            Cursor="Hand" />
+
+        <!--  LABEL FIRST UPPERCASE  -->
+        <Label Grid.Row="17" Content="16. De eerste letter is een hoofdletter en de rest klein" />
+        <!--  TEXTBOX FIRST UPPERCASE  -->
+        <TextBox
+            x:Name="txtFirstUpperCase"
+            Grid.Row="17"
+            Grid.Column="1"
+            Margin="5"
+            Background="Khaki"
+            Cursor="Arrow"
+            IsReadOnly="True" />
+        <!--  BUTTON FIRST UPPERCASE  -->
+        <Button
+            x:Name="btnFirstUpperCase"
+            Grid.Row="17"
+            Grid.Column="2"
+            Margin="5,5,40,5"
+            Click="btnFirstUpperCase_Click"
+            Content="..."
+            Cursor="Hand" />
+
+        <!--  LABEL WORD UPPERCASE  -->
+        <Label Grid.Row="18" Content="17. Elk woord begint met een hoofdletter " />
+        <!--  TEXTBOX WORD UPPERCASE  -->
+        <TextBox
+            x:Name="txtWordUppercase"
+            Grid.Row="18"
+            Grid.Column="1"
+            Margin="5"
+            Background="Khaki"
+            Cursor="Arrow"
+            IsReadOnly="True" />
+        <!--  BUTTON WORD UPPERCASE  -->
+        <Button
+            x:Name="btnWordUpperCase"
+            Grid.Row="18"
+            Grid.Column="2"
+            Margin="5,5,40,5"
+            Click="btnWordUpperCase_Click"
+            Content="..."
+            Cursor="Hand" />
+
+        <!--  LABEL VOWEL UPPERCASE  -->
+        <Label Grid.Row="19" Content="18. Alle klinkers met een hoofdletter de rest klein" />
+        <!--  TEXTBOX VOWEL UPPERCASE  -->
+        <TextBox
+            x:Name="txtVowelUppercase"
+            Grid.Row="19"
+            Grid.Column="1"
+            Margin="5"
+            Background="Khaki"
+            Cursor="Arrow"
+            IsReadOnly="True" />
+        <!--  BUTTON VOWEL UPPERCASE  -->
+        <Button
+            x:Name="btnVowelUpperCase"
+            Grid.Row="19"
+            Grid.Column="2"
+            Margin="5,5,40,5"
+            Click="btnVowelUpperCfase_Click"
+            Content="..."
+            Cursor="Hand" />
+
+        <!--  LABEL REVERSE STRING 2  -->
+        <Label Grid.Row="20" Content="19. String omdraaien met code" />
+        <!--  TEXTBOX REVERSE STRING 2  -->
+        <TextBox
+            x:Name="txtReverseString2"
+            Grid.Row="20"
+            Grid.Column="1"
+            Margin="5"
+            Background="Khaki"
+            Cursor="Arrow"
+            IsReadOnly="True" />
+        <!--  BUTTON REVERSE STRING 2  -->
+        <Button
+            x:Name="btnReverseString2"
+            Grid.Row="20"
+            Grid.Column="2"
+            Margin="5,5,40,5"
+            Click="btnReverseString2_Click"
+            Content="..."
+            Cursor="Hand" />
+
+        <!--  LABEL RANDOM STRING  -->
+        <Label Grid.Row="21" Content="20. String omdraaien met code" />
+        <!--  TEXTBOX RANDOM STRING  -->
+        <TextBox
+            x:Name="txtRandomString"
+            Grid.Row="21"
+            Grid.Column="1"
+            Margin="5"
+            Background="Khaki"
+            Cursor="Arrow"
+            IsReadOnly="True" />
+        <!--  BUTTON RANDOM STRING  -->
+        <Button
+            x:Name="btnRandomString"
+            Grid.Row="21"
+            Grid.Column="2"
+            Margin="5,5,40,5"
+            Click="btnRandomString_Click"
+            Content="..."
+            Cursor="Hand" />
+    </Grid>
+</Window>
